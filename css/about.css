@@ -1,0 +1,140 @@
+.about-content {
+  margin-bottom: 2.5rem;
+}
+
+.about-description {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--greyish);
+}
+
+.curriculum-item {
+  padding: 0 0.5rem;
+}
+
+.curriculum-header {
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.75rem;
+  border-top: 1px solid var(--whiteish);
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+}
+
+.curriculum-header:hover {
+  background-color: oklch(from var(--whiteish) l c h / 0.05);
+}
+
+.curriculum-chevron > svg {
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.curriculum-item[open] .curriculum-chevron > svg {
+  transform: rotate(90deg);
+}
+
+.curriculum-content {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.25rem;
+}
+
+.curriculum-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  transition: transform 0.5s ease;
+}
+
+.curriculum-header:hover .curriculum-info {
+  transform: translateX(0.5rem);
+}
+
+.curriculum-company {
+  color: var(--whiteish);
+}
+
+.curriculum-roles {
+  font-size: 0.75rem;
+  color: var(--greyish);
+}
+
+.curriculum-time {
+  font-size: 0.75rem;
+  color: var(--greyish);
+  transition: transform 0.5s ease;
+}
+
+.curriculum-header:hover .curriculum-time {
+  transform: translateX(0.5rem);
+}
+
+.curriculum-body {
+  margin: 1.5rem 0;
+}
+
+.curriculum-skills {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  text-align: left;
+  padding: 0 1rem;
+  line-height: 1.6;
+}
+
+.curriculum-description {
+  margin: 0.75rem 0;
+  text-align: left;
+  padding: 0 1rem;
+  line-height: 1.6;
+  font-size: 0.875rem;
+}
+
+.curriculum-description p {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  .curriculum-header {
+    justify-content: space-between;
+    gap: 1.25rem;
+    padding: 1.25rem 2.5rem;
+    font-size: 1rem;
+  }
+
+  .curriculum-content {
+    gap: 1.25rem;
+  }
+
+  .curriculum-info {
+    gap: 0.25rem;
+  }
+
+  .curriculum-header:hover .curriculum-info {
+    transform: translateX(-0.5rem);
+  }
+
+  .curriculum-roles {
+    font-size: 0.875rem;
+  }
+
+  .curriculum-time {
+    font-size: 1rem;
+    color: var(--whiteish);
+  }
+
+  .curriculum-header:hover .curriculum-time {
+    transform: translateX(0.5rem);
+  }
+
+  .curriculum-description {
+    font-size: 1rem;
+  }
+}

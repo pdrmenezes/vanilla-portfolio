@@ -1,0 +1,22 @@
+.home-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.home-text {
+  font-size: clamp(1.2rem, 5vw, 3.125rem);
+  font-weight: 500;
+}
+
+.home-text.h1 {
+  font-size: clamp(3rem, 9vw, 6rem);
+  font-weight: 700;
+}
+
+.home-text.h2 {
+  font-size: clamp(1.2rem, 5vw, 3.125rem);
+  font-weight: 500;
+}
