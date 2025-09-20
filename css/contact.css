@@ -21,6 +21,10 @@
   text-decoration: none;
   color: var(--whiteish);
   transition: all 0.3s ease;
+
+  &:not(:last-child) {
+    cursor: pointer;
+  }
 }
 
 .contact-item h2 {

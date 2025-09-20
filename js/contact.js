@@ -1,9 +1,11 @@
 function initEmailToast() {
-  const emailElement = document.getElementById("email");
+  const emailElement = document.getElementById("email-item");
   if (!emailElement) return;
 
+  const emailContent = document.getElementById("email");
+
   emailElement.addEventListener("click", async () => {
-    const email = emailElement.textContent;
+    const email = emailContent.textContent;
     const toastDiv = document.getElementById("email-toast");
 
     try {
