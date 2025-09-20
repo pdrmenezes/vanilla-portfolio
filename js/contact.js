@@ -6,7 +6,7 @@ function initEmailToast() {
 
   emailElement.addEventListener("click", async () => {
     const email = emailContent.textContent;
-    const toastDiv = document.getElementById("email-toast");
+    const toastDiv = document.querySelector(".email-toast");
 
     try {
       await navigator.clipboard.writeText(email);
