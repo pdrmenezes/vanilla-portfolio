@@ -89,7 +89,7 @@
   position: fixed;
   bottom: 2rem;
   left: 50%;
-  transform: translateY(50%);
+  transform: translateX(-50%) translateY(50%);
   z-index: 50;
   margin: 0 1rem;
   opacity: 0;
@@ -126,7 +126,7 @@
 
 .email-toast.show {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(-50%) translateY(0);
 }
 
 @media (min-width: 768px) {
